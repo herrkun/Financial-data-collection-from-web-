@@ -3,7 +3,7 @@ A python scripe that collecting financial data from ju-chao web, and can downloa
 
 ### platform: win10 anaconda python3.7 pdfplumber==0.5.12 (Don't install pdfminer if you have installed pdfplumber,it will destroy the envoronment as pdfplumber used a another version of pdfminer as backend)
 
-* original_data dir: test files prepared for test,you can use them by modify the file path in .py files
+* *original_data dir*: test files prepared for test,you can use them by modify the file path in .py files
 
 * download_files dir: download dir saving download files from the web
 
@@ -40,5 +40,11 @@ del_test.py is just a test file that you can ignore,and can also be a test files
 get_tableData_pdfplumber_example.py and get_tableData_pdfplumber_example2.py are examples showing the skills using pdfplumber,you can have a preview before running.   
 get_url_example.py is also a example that for testing ideas.  
 parase_data_from_download.py also is a testing file can be ignore  
+
+
+#### Debug experience:
+* using try except to avoid exceptions, some exceptions may happen when opening pdf files,use try-except struct to ignore them,and turn to the next  
+* if you are downloading many pdf files, suggesting to use os.remove() after parasering files  
+* their may be a error when accessing the ju chao web for downloading many pdf files, because the ju chao web think you as a web-attack as accessing frequently. use time.sleep or try except to solve this problem.  error: ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接  
 
 to be continued......
