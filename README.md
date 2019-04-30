@@ -2,7 +2,8 @@
 A python scripe that collecting financial data from ju-chao web, and can download pdf files from it , more important is it can parase data you want from pdf files using pdfplumber .
 
 ### platform:  
-### win10 anaconda python3.7 pdfplumber==0.5.12 (Don't install pdfminer if you have installed pdfplumber,it will destroy the envoronment as pdfplumber used a another version of pdfminer as backend)
+### win10 anaconda python3.7 pdfplumber==0.5.12     
+### (Don't install pdfminer if you have installed pdfplumber,it will destroy the envoronment as pdfplumber used a another version of pdfminer as backend)
 
 * *original_data dir*: test files prepared for test,you can use them by modify the file path in .py files
 
